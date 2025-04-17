@@ -1,6 +1,6 @@
 # Terraform commands
 
-When using terraform, first make a new sub directory for the task you want to do. (e.g. make an ec2 instance)
+When using terraform, first make a new sub directory for the task you want to do. (e.g. [make an ec2 instance](https://github.com/JamesC830/tech503-terraform/tree/main/make_ec2_instance))
 
 ## Important: Add a .gitignore file containing the following:
 
@@ -23,8 +23,12 @@ Make a ```main.tf``` file, this is where we will put our code.
 ## Workflow
 
   After we have written the ```main.tf``` file containing the instructions of what we want to make:
-- ```terraform init```: Much like git init is sets the groundwork. It will also add a number of files to the repo required to make things work
+- ```terraform init```: Much like git init is sets the groundwork. It will also add a number of files to the repo required to make things work such as terraform.tfstate
 - ```terraform fmt```: Like ansible syntax check. Makes sure the main.tf file has no syntax errors
 - ```terraform plan```: Gives a rundown of what the main file will create. (Tells you what terraform is going to do, without actually doing it)
 - ```terraform apply```: Applies the plan. (e.g. makes the instances)
 - ```terraform destroy```: Shuts down or deletes everything that terraform has a record or creating
+
+## Main.tf example
+
+[Setting up a basic EC2 instance](https://github.com/JamesC830/tech503-terraform/blob/main/make_ec2_instance/main.tf)

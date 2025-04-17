@@ -6,7 +6,7 @@
 
 - Download terraform
 - Unzip
-- Move it into it's own folder (mine is in "C:\terraform_1.11.4_windows_386")
+- Move it into it's own folder (e.g. "C:\terraform_1.11.4_windows_386")
 
 ## Adding environment variables
 
@@ -22,7 +22,7 @@ This needs to be done so that terraform can be accessed from any directory in gi
 - Go to environment variables
 - In user variables:
   - Edit the PATH variable
-  - Add a new value with the path to terraform (C:\terraform_1.11.4_windows_386)
+  - Add a new value with the path to terraform (e.g. C:\terraform_1.11.4_windows_386)
 
 <img src="./Images/evs.png" alt="alt text" width="300"/>
 
@@ -32,7 +32,7 @@ Where it says "c:\terraform", replace this with the path to your terraform folde
   - Open a powershell or gitbash window
   - type ```terraform --version```
 
-Expected output
+Expected output:
 ```
 Terraform v1.11.4
 on windows_386
