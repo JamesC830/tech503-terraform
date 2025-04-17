@@ -1,7 +1,7 @@
 # Where to make infrastucture (what cloud provider?)
 provider "aws" {
   # which region we want to use
-  region = "eu-west-1"
+  region = var.base_ubuntu_22_region
 
   # When we do teraform init it will download all the required dependancies for the provider stated
 }
@@ -11,16 +11,16 @@ provider "aws" {
 resource "aws_instance" "app_instance" {
 
   # Which AMI to use
-  ami = "ami-0f0c3baa60262d5b9"
+  ami = var.base_ubuntu_22_ami_id
 
   # What type of instance to use
-  instance_type = "t2.micro"
+  instance_type = var.base_ubuntu_22_instance_type
 
   # Do we need a public IP
-  associate_public_ip_address = true
+  associate_public_ip_address = var.base_ubuntu_22_public_ip_boolean
 
   # Name the resource in AWS
   tags = {
-    Name = "tech503-james-terraform-instance"
+    Name = var.base_ubuntu_22_instance_name
   }
 }
