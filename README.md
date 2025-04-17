@@ -16,7 +16,7 @@ Alternatives:
 - Chef: Mainly config management service
 - Puppet: Mainly config management service
 
-Production | Test | Disaster recovery |
+**Production** | **Test** | **Disaster recovery** |
 ------|----------|----
 scale | Quick | Automated failover
 consistency | Reproducible |
